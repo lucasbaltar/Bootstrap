@@ -6,52 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Hello, World</a>
+          <a class="navbar-brand" href="#">
+            <img src="assets/ambev.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          </a>
+          <a class="navbar-brand" href="index.html">Ambev</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Cervejas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#historia">Nossa história</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Trabalhe Conosco
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Currículo</a></li>
+                  <li><a class="dropdown-item" href="#">Vagas</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#faleconosco">Fale conosco!</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
             </form>
           </div>
         </div>
       </nav>
 
-    
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height:400px width: 100%" >
+          <div class="carousel-item active">
+            <img src="assets/ambev.png" class="d-block w-50" alt="..." >
+          </div>
+          <div class="carousel-item">
+            <img src="assets/brahma chopp.jpg" class="d-block w-50" alt="..." style="max-width: 30">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/skol.jpg" class="d-block w-50" alt="..." style="max-width: 30">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/antarctica.jpg" class="d-block w-50" alt="..." style="max-width: 30">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="modal-dialog modal-xl p-5" style="text-align:center" >
+        <h2 id="historia">Nossa história</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Mr4WLNIV4gY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
 
 
+      <p class="text-center">A Ambev nasceu, em 1999, da união entre as centenárias Cervejaria Brahma e Companhia Antarctica. Mas a nossa história começou muito antes, quando ainda éramos duas cervejarias na década de 1880: a Companhia Antarctica Paulista e a Manufactura de Cerveja Brahma & Villeger & Companhia.
 
+        Desde então, em mais de um século, passamos por incontáveis momentos juntos: as celebrações mais incríveis, os shows dos seus sonhos, o jogo de futebol inesquecível. Estamos com você nos melhores momentos e, por todo esse tempo, seguimos crescendo para unir forças e fortalecer ainda mais os vínculos com você, nosso cliente.
+        
+        Aumentar o nosso negócio e variar a cartela de sabores é diversificar e garantir a nossa participação nos seus momentos de comemoração. É para isso que trabalhamos: para desenvolver o gosto certo em cada uma dessas etapas.
+        
+        A cerveja é a nossa grande paixão.
+        
+        O nosso negócio é o seu brinde.
+        
+        Hoje, são mais de 100 rótulos. O nosso compromisso é celebrar com você para continuar presente nos momentos mais especiais, compartilhando todas as conquistas pelos próximos cem anos.
+        
+        A nossa missão é a nossa razão de ser e o compromisso da Ambev como empresa.</p>
+
+
+        <div class="card-group">
+          <div class="card">
+            <img src="assets/brahma.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Brahma</h5>
+              <p class="card-text"></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/skol.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Skol</h5>
+              <p class="card-text"></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/antarctica.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Antarctica</h5>
+              <p class="card-text"></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+
+        <form>
+          <div class="container">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Nome Completo</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome completo" onkeyup="validaNome()">
+            <div id="txtNome"></div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite o seu email" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Como podemos te ajudar?</label>
+            <textarea class="form-control" id="texto" rows="3"></textarea>
+          </div>
+        </div>
+        </form>
+<!--Footer-->
+
+<hr />
+<footer>
+  <div class="row mb-3">
+    <div class="col-md-12">
+      <h2 id="contacts" class="text-center">Redes Sociais</h2>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-12 d-flex justify-content-center">
+      <a
+        href=""
+        target="_blank"
+        class="p-3"
+      >
+        <img
+          class="tm-social"
+          src="assets/instagram logo.jpg"
+          alt="Instagram Logo"
+        />
+      </a>
+      <a
+        href=""
+        target="_blank"
+        class="p-3"
+      >
+        <img
+          class="tm-social"
+          src="assets/whatsapp.jpg"
+          alt="WhatsApp logo"
+        />
+      </a>
+    </div>
+  </div>
+  <p class="text-center footer">
+    Direitos Reservados: Ambev &reg;
+  </p>
+</footer>
+
+<!--/Footer-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="C:\Users\lucas\Desktop\BootStrap\Bootstrap\Bootstrap\script.js"></script>
 </body>
 </html>
